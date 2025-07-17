@@ -219,12 +219,12 @@ header {
 }
 
 .overwatch {
-  border-color: white;
-  color: white;
+  border-color:#F06414;
+  color: #F06414;
 }
 
 .overwatch #read-more {
-  background: white;
+  background: #F06414;
   color: black;
 }
 
