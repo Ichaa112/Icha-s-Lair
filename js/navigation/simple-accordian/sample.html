@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<script type="text/javascript" src="../../libraries/jquery.js"></script>
+    <link href="simple-accordian.css" rel="stylesheet" type="text/css" media="screen">
+    
+    <script>
+		function initMenu() {
+		  $('#menu ul').hide();
+		  if ($('#menu li').has('ul')) $('#menu ul').prev().addClass('expandable');
+		  $('.expandable').click(
+			function() {
+				$(this).next().slideToggle();
+				$(this).toggleClass('expanded');
+			  }
+			);
+		  }
+	
+		$(document).ready(function() {initMenu();});
+    </script>
+    
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<title>Untitled Document</title>
+</head>
+
+<body>
+
+<div id="leftnav">
+
+    <ul id="menu">
+        <li><a href="#">Welcome</a></li>
+        
+        <li><a href="#">About</a>
+            <ul>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Future</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="#">Products</a>
+            <ul>
+                <li><a href="#">Widgits</a></li>
+                <li><a href="#">Do Dads</a></li>
+                <li><a href="#">Things</a></li>
+                <li><a href="#">Stuff</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="#">Services</a></li>
+        
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+Timothy Framework - www.timothyframework.com 
+
+This work is licensed under the MIT License - http://www.opensource.org/licenses/mit-license.php
+
+// Create a link to the JQuery Library and  lightbox.js 
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+
+// Create a link to the lightbox.css file
+
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+// Code for Page (when gallery is based on div)
+
+	<script type="text/javascript">
+		$(function() {
+			$('#gallery a').lightBox();
+		});
+    </script>
+
+
+// Here is a sample of HTML code for the image gallery
+
+	<div id="gallery">
+		<a href="../../../../Timothy Basic Framework/js/plugins/lightbox2/Insert Photo Path" title="This is the caption text">
+		<img src="../../../../Timothy Basic Framework/js/plugins/lightbox2/Insert Photo Path" width="120" height="80" /></a>
+	</div>
+
+
+
+// Here are three possible variations of the JQuery selector script - use ONE only
+
+	// Activate using the "rel" attribute with the value "lightbox"
+		$('a[@rel*=lightbox]').lightBox();
+		
+	// Activate using the element id of "lightbox"
+		$('#gallery a').lightBox();
+		
+	// Activate using the "lightbox" class
+		$('a.lightbox').lightBox();
+

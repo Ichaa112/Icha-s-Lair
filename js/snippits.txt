@@ -1,0 +1,16 @@
+// JQuery Disable Right Click Menu
+
+    <script type="text/javascript" language="javascript">
+		$(document).ready(function(){
+		$(document).bind("contextmenu",function(e){
+			return false;
+		});
+		});
+	</script> 
+
+
+// IE HTML5 Shiv
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
