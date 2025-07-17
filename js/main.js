@@ -10,7 +10,7 @@ const games = [
   {
     name: 'MARVEL RIVAL',
     className: 'marvel',
-    img: 'IMG/marvy-rivy.png',
+    img: 'IMG/marvyrivy.png',
     link: 'marvel.html'
   },
   {
@@ -22,7 +22,7 @@ const games = [
   {
     name: 'CITY SKYLINE',
     className: 'city',
-    img: 'IMG/city-skyline.png',
+    img: 'IMG/cityskyline.png',
     link: 'city.html'
   }
 ];
